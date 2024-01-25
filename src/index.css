@@ -35,3 +35,48 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+/*variants*/
+
+.button-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-30 focus:border-2 focus:border-blue-600
+}
+
+.button-secondary {
+    @apply bg-green-600 text-white hover:bg-green-500 disabled:opacity-30 focus:border-2 focus:border-green-600
+}
+
+.button-light {
+    @apply bg-yellow-400 text-white hover:bg-yellow-500 disabled:opacity-30 focus:border-2 focus:border-yellow-600
+}
+
+.button-dark {
+    @apply bg-gray-800 text-white hover:bg-gray-600 disabled:opacity-30 focus:border-2 focus:border-gray-600
+}
+
+.button-outline {
+    @apply text-blue-600 border border-blue-600 hover:bg-blue-100 disabled:opacity-30 focus:border-2 focus:border-blue-600
+}
+
+.button-text {
+    @apply text-black hover:text-blue-600 hover:bg-blue-100 disabled:text-blue-600 disabled:opacity-30 focus:border-2 focus:border-blue-600
+}
+
+
+/*sizes*/
+
+.button-sm {
+    @apply h-6 text-sm
+}
+
+.button-base {
+    @apply h-8 text-base
+}
+
+.button-lg {
+    @apply h-10 text-lg
+}
+
+.button-xl {
+    @apply h-12 text-xl
+}
