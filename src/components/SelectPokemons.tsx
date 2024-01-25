@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PokemonType } from "../types/types";
 import axios from "axios";
+import Search from "./Search";
 
 const SelectPokemons = () => {
   const [text, setText] = useState<string | null>("");
@@ -38,7 +39,15 @@ const SelectPokemons = () => {
 
   return (
     <div className="h-[100vh]">
-      <div className="px-10"></div>
+      <div className="px-10">
+        <Search
+          text={text}
+          setText={setText}
+          fullTeam={fullTeam}
+          team={team}
+          setModalFormIsOpen={setModalFormIsOpen}
+        />
+      </div>
     </div>
   );
 };

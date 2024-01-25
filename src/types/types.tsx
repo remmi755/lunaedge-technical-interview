@@ -10,3 +10,9 @@ export type PokemonType = {
   url: string;
   sprites: SpritesType;
 };
+
+export type FormValues = {
+  name: string;
+  lastname: string;
+  search: string;
+};
