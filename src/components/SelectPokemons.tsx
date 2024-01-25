@@ -6,6 +6,7 @@ import ListPokemons from "./ListPokemons";
 import PokemonCard from "./PokemonCard";
 import Modal from "./Modal";
 import UserForm from "./UserForm";
+import Team from "./Team";
 
 const SelectPokemons = () => {
   const [text, setText] = useState<string | null>("");
@@ -108,6 +109,14 @@ const SelectPokemons = () => {
           <UserForm showTeam={showTeam} />
         </Modal>
       </div>
+      <Modal
+        isOpen={modalTeamIsOpen}
+        onClose={() => setModalTeamIsOpen(false)}
+        title={"This is your Team"}
+        width={"w-[800px]"}
+      >
+        <Team team={team} setTeam={setTeam} />
+      </Modal>
     </div>
   );
 };
