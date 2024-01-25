@@ -4,6 +4,8 @@ import axios from "axios";
 import Search from "./Search";
 import ListPokemons from "./ListPokemons";
 import PokemonCard from "./PokemonCard";
+import Modal from "./Modal";
+import UserForm from "./UserForm";
 
 const SelectPokemons = () => {
   const [text, setText] = useState<string | null>("");
@@ -58,6 +60,11 @@ const SelectPokemons = () => {
     }
   };
 
+  const showTeam = () => {
+    setModalFormIsOpen(false);
+    setModalTeamIsOpen(true);
+  };
+
   return (
     <div className="h-[100vh]">
       <div className="px-10">
@@ -90,6 +97,16 @@ const SelectPokemons = () => {
             )}
           </div>
         </section>
+      </div>
+      <div className="">
+        <Modal
+          isOpen={modalFormIsOpen}
+          onClose={() => setModalFormIsOpen(false)}
+          width={"w-[464px]"}
+          title={"Enter your Name and Last Name"}
+        >
+          <UserForm showTeam={showTeam} />
+        </Modal>
       </div>
     </div>
   );
