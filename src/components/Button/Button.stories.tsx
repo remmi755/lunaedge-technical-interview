@@ -2,7 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { ButtonProps } from "./Button";
 import { action } from "@storybook/addon-actions";
 import Button from "./Button";
-import "../../App.css";
+import "../../index.css";
 
 export default {
   title: "Components/Button",
