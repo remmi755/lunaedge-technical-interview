@@ -2,8 +2,8 @@ import * as React from "react";
 import "../../index.css";
 import cn from "classnames";
 
-import IconStar from "../Icons/IconStar";
-import ChevronDown from "../Icons/ChevronDown";
+import IconStar from "../../assets/Icons/IconStar";
+import ChevronDown from "../../assets/Icons/ChevronDown";
 import { ReactNode } from "react";
 
 export interface ButtonProps {

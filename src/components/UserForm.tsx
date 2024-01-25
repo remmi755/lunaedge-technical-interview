@@ -2,7 +2,7 @@ import * as React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Button from "./Button/Button";
 import Input from "./Input/Input";
-import IconStar from "./Icons/IconStar";
+import IconStar from "../assets/Icons/IconStar";
 import { FormValues } from "../types/types";
 
 const UserForm = ({ showTeam }: any) => {
