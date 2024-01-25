@@ -1,8 +1,9 @@
 import "./index.css";
+import Header from "./components/Header";
 function App() {
   return (
     <div>
-      <p>Welcome to Luna Edge technical interview</p>
+      <Header />
     </div>
   );
 }
